@@ -1,0 +1,24 @@
+void main(){
+  String? mesaj= null;
+  mesaj = "merhaba";
+
+  String? isim = null;
+
+
+  //yöntem 1 : ? null ise çökme olmaz,null olmazsa çalışır
+
+  print("sonuc 1 : ${isim?.toUpperCase()}");
+
+  //yöntem 2 : ! uyarıdan kurtarır ama hata olma ihtimali vardır
+
+  //print("sonuc 2 : ${isim!.toUpperCase()}");
+
+  //yöntem 3 : if ile null kontrolü yapmak
+
+  if(isim !=null)
+    {
+      print("sonuc 3 : ${isim.toUpperCase()}");
+    }else{
+    print("isim null ve islem yapilmadi");
+  }
+}
