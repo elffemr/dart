@@ -1,0 +1,28 @@
+//composition --> başka classlardan oluşmuş nesneler bir sınıfın degiskeni olabilir
+
+
+
+class Adres{
+  String il;
+  String ilce;
+
+  Adres(this.il, this.ilce);
+}
+
+class Musteriler{
+  String ad;
+  int yas;
+  Adres adres; //compositon
+
+  Musteriler(this.ad, this.yas, this.adres);
+}
+
+void main(){
+  var adres = Adres("Bursa", "Osmangazi");
+      
+  var musteri = Musteriler("Ahmet", 23, adres);
+
+  print(" musteri ad : ${musteri.ad}");
+  print("musteri yas : ${musteri.yas}");
+  print("musteri il : ${musteri.adres.il}"); // compositon
+}
