@@ -1,0 +1,15 @@
+import 'package:dart/katagoriler.dart';
+import 'package:dart/yonetmenler.dart';
+
+class Filmler{
+  int film_id;
+  String film_ad;
+  int film_yil;
+  Kategoriler kategori; //composition
+  Yonetmenler yonetmen; //composition
+
+  Filmler(
+      this.film_id, this.film_ad, this.film_yil, this.kategori, this.yonetmen);
+
+
+}
