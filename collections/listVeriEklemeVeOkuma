@@ -1,0 +1,28 @@
+void main(){
+
+  var iller = <String>[];
+  var plakalar = [16,34,6];
+
+  var meyveler=<String>[];
+  meyveler.add("çilek"); //0.indeks
+  meyveler.add("muz"); //1.
+  meyveler.add("elma"); //2.
+
+  print(meyveler);
+
+  meyveler.add("mandalina");
+  print(meyveler);
+
+  meyveler[2]="ananas"; //var olan bilgiyi güncelleme
+  print(meyveler);
+
+  meyveler.insert(3, "portakal"); //list içine veriyi ekleme ve diper verileri öteleme
+  print(meyveler);
+
+  //veri okuma
+  String str = meyveler[0]; //çilek
+  print(str);
+
+  print(meyveler[2]); //ananas
+
+}
